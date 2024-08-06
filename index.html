@@ -26,6 +26,7 @@
         border-left: 100px  solid transparent;
         border-right: 100px solid transparent;
         transform: rotate(35deg);
+        animation: beat 1s infinite; 
     }
     @keyframes beat{
         10%{
@@ -76,7 +77,7 @@
         transform: rotatex(180deg);
     }
     .container >.c:hover ~ .star{
-        transform: scale(0,=.5);
+        transform: scale(0.5);
     }
     .container > .d:hover ~ .star{
         transform: skewx(30deg);
