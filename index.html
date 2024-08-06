@@ -25,7 +25,12 @@
         border-bottom: 70px  white solid;
         border-left: 100px  solid transparent;
         border-right: 100px solid transparent;
-        transform: rotate(35deg)
+        transform: rotate(35deg);
+    }
+    @keyframes beat{
+        10%{
+            transform: scale(2);
+        }
     }
     .star::before{
         content: '';
@@ -51,7 +56,7 @@
         width: 800px;
         height: 700px;
         border: solid 2px;
-        margin-left: 350px;
+        margin-left: 50px;
         background-color:black;
     }
     
@@ -65,13 +70,13 @@
         box-shadow: 5px 5px 9px 9px rgb(111, 209, 209) ;
     }
     .container >.a:hover ~ .star {
-        transform: translate(200px);   
+        transform: translate(200px);  
     }
     .container > .b:hover ~ .star{
         transform: rotatex(180deg);
     }
     .container >.c:hover ~ .star{
-        transform: scale(2);
+        transform: scale(0,=.5);
     }
     .container > .d:hover ~ .star{
         transform: skewx(30deg);
@@ -85,7 +90,8 @@
         border-bottom: 30px  white solid;
         border-left: 50px  solid transparent;
         border-right: 50px solid transparent;
-        transform: rotate(35deg)
+        transform: rotate(35deg);
+        animation: beat 1s infinite;
 
     }
     .star1::before{
@@ -117,7 +123,8 @@
         border-bottom: 30px white solid;
         border-left: 50px  solid transparent;
         border-right: 50px solid transparent;
-        transform: rotate(35deg)
+        transform: rotate(35deg);
+        animation: beat 1s infinite;
     }
     .star2::before{
         content: '';
