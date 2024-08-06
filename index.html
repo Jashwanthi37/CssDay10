@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+        margin: 0px;
+    }
+    .container{
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100%;
+    }
+    .star{
+        margin-left:300px;
+        margin-top: -100px;
+        width: 0px;
+        height: 0px;
+        position: relative;
+        border-bottom: 70px  white solid;
+        border-left: 100px  solid transparent;
+        border-right: 100px solid transparent;
+        transform: rotate(35deg)
+    }
+    .star::before{
+        content: '';
+        position: absolute;
+        top: 10px;
+        left:-110px;
+        border-bottom: 70px white solid;
+        border-left: 100px  solid transparent;
+        border-right: 100px solid transparent;
+        transform: rotate(-75deg);
+    }
+    .star::after{
+        content: '';
+        position: absolute;
+        border-bottom: 70px white solid;
+        border-left: 30px  solid transparent;
+        border-right: 30px solid transparent;
+        transform: rotate(-35deg);
+        top: -45px;
+        left: -70px;
+    }
+    .container{
+        width: 800px;
+        height: 700px;
+        border: solid 2px;
+        margin-left: 350px;
+        background-color:black;
+    }
+    
+    .a,.b,.c,.d{
+        background-color: aqua;
+        font-size: 20px;
+        text-shadow: 3px 3px white ,2px 2px red;
+        padding: 10px;
+        margin: 50px;
+        box-shadow: 2px 2px  aqua ;
+    }
+    .container >.a:hover ~ .star {
+        transform: translate(200px);   
+    }
+    .container > .b:hover ~ .star{
+        transform: rotatex(180deg);
+    }
+    .container >.c:hover ~ .star{
+        transform: scale(2);
+    }
+    .container > .d:hover ~ .star{
+        transform: skewx(30deg);
+    }
+    
+    .star1{
+        margin-top:-100px ;
+        width: 0px;
+        height: 0px;
+        position: relative;
+        border-bottom: 30px  white solid;
+        border-left: 50px  solid transparent;
+        border-right: 50px solid transparent;
+        transform: rotate(35deg)
+
+    }
+    .star1::before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left:-50px;
+        border-bottom: 30px white solid;
+        border-left: 50px  solid transparent;
+        border-right: 50px solid transparent;
+        transform: rotate(-75deg);
+    }
+    .star1::after{
+        content: '';
+        position:absolute;
+        border-bottom: 30px  white solid;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        transform: rotate(-35deg);
+        top:-22px;
+        left: -30px;
+    }
+    .star2{
+        margin-left: 640px;
+        margin-top:-10px;
+        width: 0px;
+        height: 0px;
+        position: relative;
+        border-bottom: 30px white solid;
+        border-left: 50px  solid transparent;
+        border-right: 50px solid transparent;
+        transform: rotate(35deg)
+    }
+    .star2::before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left:-50px;
+        border-bottom: 30px white solid;
+        border-left: 50px  solid transparent;
+        border-right: 50px solid transparent;
+        transform: rotate(-75deg);
+    }
+    .star2::after{
+        content: '';
+        position:absolute;
+        border-bottom: 30px  white solid;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        transform: rotate(-35deg);
+        top:-22px;
+        left: -30px;
+    }
+    .i1{
+        margin-left: 200px;
+        margin-top: 200px;
+    }
+    .i2{
+        margin-left: 300px;
+        margin-top: 80px;
+    }
+    .i3{
+        margin-left: 700px;
+        margin-top: -200px;
+    }
+    .i4{
+        margin-left: 200px;
+        margin-top: 200px;
+    }
+    
+</style>
+<body>
+    <div class="container">
+            <button class="a">Translate</button>
+            <button class="b">Rotate</button>
+            <button class="c">Scale</button>
+            <button class="d">Skew</button>
+           <div class="i"><i style="color:white;" class="fa-regular fa-star"></i></div>
+           <div class="i1"><i style="color:white;" class="fa-regular fa-star"></i></div>
+           <div class="i2"><i style="color:white;" class="fa-regular fa-star"></i></div>
+           <div class="i3"><i style="color:white;" class="fa-regular fa-star"></i></div>
+           <div class="i"><i style="color:white;" class="fa-regular fa-star"></i></div>
+           <div class="i1"><i style="color:white;" class="fa-regular fa-star"></i></div>
+           <div class="i2"><i style="color:white;" class="fa-regular fa-star"></i></div>
+           <div class="i3"><i style="color:white;" class="fa-regular fa-star"></i></div>
+    <div class="star"></div>
+    <div class="star1"></div>
+    <div class="star2"></div>
+
+    </div>
+    
+</body>
+</html>
