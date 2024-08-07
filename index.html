@@ -71,7 +71,7 @@
         box-shadow: 5px 5px 9px 9px rgb(111, 209, 209) ;
     }
     .container >.a:hover ~ .star {
-        transform: translate(200px);  
+        transform: translate(200px);
     }
     .container > .b:hover ~ .star{
         transform: rotatex(180deg);
@@ -163,6 +163,18 @@
         margin-left: 200px;
         margin-top: 200px;
     }
+    .circle{
+        position: absolute;
+        top: 200px;
+        left:550px;
+        width: 100px;
+        height: 100px;
+        background-color: red transparent;
+        margin: 20px;
+        border-radius: 50%;
+        border-left:50px  white solid ;
+    }
+    
     
 </style>
 <body>
@@ -182,8 +194,10 @@
     <div class="star"></div>
     <div class="star1"></div>
     <div class="star2"></div>
-
+    <div class="circle"></div>
     </div>
+  
+
     
 </body>
 </html>
